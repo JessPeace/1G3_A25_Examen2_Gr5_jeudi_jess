@@ -8,7 +8,7 @@ from debogage_mot_long import mot_plus_long, pourcentage_mots_max
 def test_mots_plus_long_mots_liste_correcte():
     animaux = ["chat", "chien", "éléphant", "souris", "hippopotame", "oiseau"]
     print("Mot le plus long :", mot_plus_long(animaux))
-    pourcentage = pourcentage_mots_max(animaux, 5)
+    pourcentage = pourcentage_mots_max(animaux, 8)
 
     assert 100.0
 
@@ -22,9 +22,28 @@ def test_mots_plus_long_mots_liste_trop_courte():
 def test_mots_plus_long_mots_liste_plusieurs_gros():
     animaux = ["chat","chien","kiwi",'vache']
     print("Mot le plus long :", mot_plus_long(animaux))
-    pourcentage = pourcentage_mots_max(animaux, 5)
+    pourcentage = pourcentage_mots_max(animaux, 6)
 
     assert 0.0
+
+def test_mots_plus_long_mots_liste_plus_grande():
+    animaux = ["chat", "chien", "éléphant", "souris", "hippopotame", "oiseau","kiwi",'vache','serpent','chenille', 'ornithorinque','capibara' ]
+    print("Mot le plus long :", mot_plus_long(animaux))
+    pourcentage = pourcentage_mots_max(animaux, 10)
+
+    assert 100.0
+
+def test_mots_plus_long_mots_liste_dans_liste():
+    animaux = [
+        ["chat", "chien", "éléphant", "souris"],
+        ["hippopotame",'ornithorinque','capibara','serpent'],
+        ["oiseau","kiwi",'vache','chenille']
+    ]
+    print("Mot le plus long :", mot_plus_long(animaux))
+    pourcentage = pourcentage_mots_max(animaux, 7)
+
+    assert 100.0
+
 
 # ============================
 # Tests pour pourcentage_mots_max

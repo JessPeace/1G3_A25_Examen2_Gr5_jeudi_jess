@@ -3,13 +3,13 @@
 - Créer au plan de tests contenant au moins 5 cas de tests **DIFFÉRENTS/VARIÉS**.
 - Créer les tests unitaires pour tous les cas de tests.
 
-| **liste de mots**                                                | **taille** | **resultat attendu** | message affiché + commentaires                                                                               |
-|------------------------------------------------------------------|------------|----------------------|--------------------------------------------------------------------------------------------------------------|
-| ["chat", "chien", "éléphant", "souris", "hippopotame", "oiseau"] | 5          | [hippopotame]        | [test_debogage_mot_long.py::test_mots_plus_long_mots PASSED [100%]Mot le plus long : hippopotame]            |
-| ["chat"]                                                         | 5          | -----                | [test_debogage_mot_long.py::test_mots_plus_long_mots_liste_trop_courte FAILED [100%]Mot le plus long : chat] |
-|                                                                  |            |                      |                                                                                                              |
-|                                                                  |            |                      |                                                                                                              |
-|                                                                  |            |                      |                                                                                                              |
+| **liste de mots**                                                | **taille** | **resultat attendu**             | message affiché + commentaires                                                                  |
+|------------------------------------------------------------------|-----------|----------------------------------|-------------------------------------------------------------------------------------------------|
+| ["chat", "chien", "éléphant", "souris", "hippopotame", "oiseau"] | 5         | [hippopotame]                    | [PASSED [100%]Mot le plus long : hippopotame]                                                   |
+| ["chat"]                                                         | 5         | ----- ou 0.0                     | [FAILED [100%]Mot le plus long : chat]                                                          |
+| ["chat","chien","kiwi",'vache']                                  | 5         | ----- ou 0.0 ou premier mot a 5. | [FAILED [100%]Mot le plus long : chien]  'le programme a vus le premier mot a 5 et l'as pris.'  |
+|                                                                  |           |                                  |                                                                                                 |
+|                                                                  |           |                                  |                                                                                                 |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
 | **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |

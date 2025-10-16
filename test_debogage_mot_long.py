@@ -19,6 +19,13 @@ def test_mots_plus_long_mots_liste_trop_courte():
 
     assert 0.0
 
+def test_mots_plus_long_mots_liste_plusieurs_gros():
+    animaux = ["chat","chien","kiwi",'vache']
+    print("Mot le plus long :", mot_plus_long(animaux))
+    pourcentage = pourcentage_mots_max(animaux, 5)
+
+    assert 0.0
+
 # ============================
 # Tests pour pourcentage_mots_max
 # ============================

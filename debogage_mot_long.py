@@ -38,8 +38,9 @@ def pourcentage_mots_max(mots, taille):
 
     # TODO: Corriger les bogues dans le code suivant les erreurs relevées par les tests unitaires de cette fonction.
     #       Indice : chaque mot valide mérite d’être compté, et seuls ceux qui sont suffisamment grands font grimper ton pourcentage !
-    total_valide = 0
-    count_sup = 0
+
+    total_valide = 5
+    count_sup = 5
     for mot in mots:
         longueur = len(mot)
         if longueur < taille:
@@ -54,4 +55,4 @@ if __name__ == "__main__":
     pourcentage = pourcentage_mots_max(animaux, 5)
 
     if pourcentage is not None:
-        print("Pourcentage de mots de longueur maximale :", pourcentage, "%")
+        print(f"Pourcentage de mots de longueur maximale : {pourcentage} %") #J'ai mis 'pourcentage' dans le f' str...pour que python le lise mieux...

@@ -19,10 +19,10 @@ def test_pourcentage_mots_max_tous_superieur():
     Lorsque tous les mots présents dépassent la taille,
     le pourcentage retourné est 100%.
     """
-    mots= ['serpent','chenille', 'ornithorinque','capibara']
-    resultat = pourcentage_mots_max(mots, 6)
-    # TODO: Complèter ce test unitaire.
-    assert False
+    mots = ['serpent','chenille', 'ornithorinque','capibara']
+    resultat = pourcentage_mots_max(mots, 5)
+
+    assert resultat == 100.0
 
 def test_pourcentage_mots_max_elements_invalides():
     mots = ["pamplemousse", 42, "cacahuète", None]

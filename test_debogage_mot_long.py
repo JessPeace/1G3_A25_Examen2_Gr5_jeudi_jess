@@ -20,7 +20,7 @@ def test_pourcentage_mots_max_tous_superieur():
     le pourcentage retourné est 100%.
     """
     mots = ['serpent','chenille', 'ornithorinque','capibara']
-    resultat = pourcentage_mots_max(mots, 5) #avec count_sup et total_valide a 5 sa marche, mais je doutes que sa marches autrement.
+    resultat = pourcentage_mots_max(mots, 5) #En mettant count_sup et total_valide à 5 sa fonctionne..
 
     assert resultat == 100.0
 
@@ -46,8 +46,8 @@ def test_pourcentage_mots_max_tous_inferieur():
     resultat = pourcentage_mots_max(mots, 6)
     assert 0.0
 
-def test_pourcentage_mots_max_liste_invalide(): #AHA. wow j'ai fallis pas le voir!
-    mots = 7
+def test_pourcentage_mots_max_liste_invalide(): #AHA! Wow, j'ai fallis pas le voir! j'ai changée le nom de la fonction car elle étais la même que celle du haut.
+    mots = [7]
     resultat = pourcentage_mots_max(mots, 3)
 
     assert resultat == None

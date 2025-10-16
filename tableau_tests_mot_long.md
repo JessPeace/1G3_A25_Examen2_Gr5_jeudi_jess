@@ -5,11 +5,9 @@
 
 | **liste de mots**                                  | **taille** | **resultat attendu** | message affiché + commentaires                                                                        |
 |----------------------------------------------------|------------|----------------------|-------------------------------------------------------------------------------------------------------|
-| ['serpent','chenille', 'ornithorinque','capibara'] | 5          | 100.0                | [test_debogage_mot_long.py::test_pourcentage_mots_max_tous_superieur PASSED [100%]] donc 100.00       |
-|  ['kiwi','grue','koki','opo']                      | 6          | 0.0 ou erreur        | [AssertionError] donc 0.0 . techinquement un 'passed' mais due à la longeur de mots, sa passe pas. :) |
-|                                                    |            |                      |                                                                                                       |
-|                                                    |            |                      |                                                                                                       |
-|                                                    |            |                      |                                                                                                       |
+| ['serpent','chenille', 'ornithorinque','capibara'] | 5          | 100.0                | [test_debogage_mot_long.py::test_pourcentage_mots_max_tous_superieur PASSED [100%]] donc 100.00 .     |
+| [7]                                                | 3          | 0.0                  | [TypeError: object of type 'int' has no len()]                                                        |
+| ['kiwi','grue','koki','opo']                       | 6          |  0.0 ou erreur       | [AssertionError] donc 0.0 . techinquement un 'passed' mais due à la longeur de mots, sa passe pas. :) |
 |                                                    |            |                      |                                                                                                       |
 |                                                    |            |                      |                                                                                                       |
 

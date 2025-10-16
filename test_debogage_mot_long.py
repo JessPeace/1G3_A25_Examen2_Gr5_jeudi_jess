@@ -1,9 +1,23 @@
-from debogage_mot_long import mot_plus_long, pourcentage_mots_max  # Remplacer par le nom de ton fichier
+from debogage_mot_long import mot_plus_long, pourcentage_mots_max
 
 # ============================
 # Tests pour mot_plus_long
 # ============================
 # TODO: Tests unitaires pour la fonction mot_plus_long (maximum 5 différents)
+
+def test_mots_plus_long_mots_liste_correcte():
+    animaux = ["chat", "chien", "éléphant", "souris", "hippopotame", "oiseau"]
+    print("Mot le plus long :", mot_plus_long(animaux))
+    pourcentage = pourcentage_mots_max(animaux, 5)
+
+    assert 100.0
+
+def test_mots_plus_long_mots_liste_trop_courte():
+    animaux = ["chat"]
+    print("Mot le plus long :", mot_plus_long(animaux))
+    pourcentage = pourcentage_mots_max(animaux, 5)
+
+    assert 0.0
 
 # ============================
 # Tests pour pourcentage_mots_max

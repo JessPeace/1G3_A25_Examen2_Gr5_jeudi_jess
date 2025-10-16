@@ -3,15 +3,15 @@
 - Créer au plan de tests contenant au moins 5 cas de tests **DIFFÉRENTS/VARIÉS**.
 - Créer les tests unitaires pour tous les cas de tests.
 
-| **liste de mots**                                  | **taille** | **resultat attendu** |                      |
-|----------------------------------------------------|------------|----------------------|----------------------|
-| ['serpent','chenille', 'ornithorinque','capibara'] | 6          | 100.0                |                      |
-|                                                    |            |                      |                      |
-|                                                    |            |                      |                      |
-|                                                    |            |                      |                      |
-|                                                    |            |                      |                      |
-|                                                    |            |                      |                      |
-|                                                    |            |                      |                      |
+| **liste de mots**                                  | **taille** | **resultat attendu** | message affiché + commentaires                                                                        |
+|----------------------------------------------------|------------|----------------------|-------------------------------------------------------------------------------------------------------|
+| ['serpent','chenille', 'ornithorinque','capibara'] | 5          | 100.0                | [test_debogage_mot_long.py::test_pourcentage_mots_max_tous_superieur PASSED [100%]] donc 100.00       |
+|  ['kiwi','grue','koki','opo']                      | 6          | 0.0 ou erreur        | [AssertionError] donc 0.0 . techinquement un 'passed' mais due à la longeur de mots, sa passe pas. :) |
+|                                                    |            |                      |                                                                                                       |
+|                                                    |            |                      |                                                                                                       |
+|                                                    |            |                      |                                                                                                       |
+|                                                    |            |                      |                                                                                                       |
+|                                                    |            |                      |                                                                                                       |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
 | **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |
